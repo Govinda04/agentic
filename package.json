@@ -27,6 +27,7 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "clean": "del build",
+    "prebuild": "del clean",
     "predev": "run-s clean",
     "pretest": "run-s build",
     "docs": "typedoc",
@@ -34,7 +35,7 @@
     "pre-commit": "lint-staged",
     "test": "run-p test:*",
     "test:prettier": "prettier '**/*.{js,jsx,ts,tsx}' --check",
-    "postinstall": "npm run build"
+    "postinstall": "npm i npm run build"
   },
   "dependencies": {
     "cac": "^6.7.14",
