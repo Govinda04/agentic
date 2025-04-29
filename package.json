@@ -27,7 +27,6 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "clean": "del build",
-    "prebuild": "run-s clean",
     "predev": "run-s clean",
     "pretest": "run-s build",
     "docs": "typedoc",
